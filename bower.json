@@ -1,0 +1,26 @@
+{
+  "name": "x-footer",
+  "version": "1.0.0",
+  "homepage": "http://x-element.github.io/x-footer",
+  "authors": [
+    "AndryGP tizianosperati"
+  ],
+  "description": "x-footer encapsulates a footer page into a web component",
+  "main": "x-footer.html",
+  "keywords": [
+    "polymer",
+    "x-footer",
+    "footer",
+    "web-component",
+    "web-components",
+    "x-element"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
