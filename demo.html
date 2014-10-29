@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<style> 
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			font-family: 'RobotoDraft', sans-serif;
+
+		}
+		h1 {
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			font-weight: 100;
+			text-align: center;
+		}
+		
+		h2 {
+			font-variant: small-caps;
+			font-weight: 300; 
+			text-align: center;
+		}
+ 		
+	</style>
+  <head>
+    <script src="components/platform/platform.js"></script>
+    <link rel="import" href="x-footer.html">
+    <link rel="import" href="components/font-roboto/roboto.html">
+
+
+
+  </head>
+
+  <body>
+	    <x-footer id="footer">
+	    </x-footer>
+	    <script> 
+	    var footer = document.getElementById('footer');
+
+	    fbuser = '';
+  		twituser = '';
+  		plusnumber = '';
+  		brand = 'X-footer';
+  		developer = 'developer';
+	    city =  'city';
+	    address = 'address';
+
+	    footer.fbuser = fbuser;
+	    footer.twituser = twituser;
+	    footer.plusnumber = plusnumber;
+	    footer.brand = brand;
+	    footer.developer = developer;
+	    footer.city = city;
+	    footer.address = address;
+
+	    </script>
+  </body>
+</html>
