@@ -1,9 +1,9 @@
-<link rel="import" href="/components/polymer/polymer.html">
+<link rel="import" href="components/polymer/polymer.html">
 
 <polymer-element name="x-footer">
   <template>
  
-    <link rel="stylesheet"  href="/components/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet"  href="components/bootstrap/bootstrap.min.css">
 
     <style>
       :host {
@@ -43,19 +43,19 @@
       font-size: 14px;
     }
      #facebook-icon {
-      height: 20px;
-      width: 20px;
+      height: 22px;
+      width: 22px;
       margin: 5px;
     }
      #twitter-icon {
-      height: 20px;
-      width: 20px;
+      height: 22px;
+      width: 22px;
       margin: 5px;
 
     }
      #google-icon {
-      height: 25px;
-      width: 25px;
+      height: 22px;
+      width: 22px;
       margin: 5px;
 
     }
@@ -74,14 +74,14 @@
       text-decoration: none;
     }
     .container {
-      background-color: rgba(126,237,0, 0.1);
+      background-color: #efefef;
       width: 100%;
     }
 
     </style>
     <div id="footer" class="container">
         <div class="col-md-4">
-          <h2><a id="brand" href="/demo.html">{{brand}}</a></h2>
+          <h2><a id="brand" href="/x-footer/demo.html">{{brand}}</a></h2>
           <table id="icons" align="center">
               <tbody>
                 <td> <a href="http://facebook.com/{{ fbuser }}" target="_blank" > <img id="facebook-icon" src="images/official_facebook.png"> </a> </td>
@@ -91,7 +91,7 @@
             </table>
         </div>
         <div class="col-md-4">
-          <p id="dev"> Developed by {{developer}} </p>
+          <p id="dev"> Developed by <a id="brand" href="">{{developer}}</a></p>
         </div>
         <div class="col-md-4">
           <h3> {{city}} </h3>
