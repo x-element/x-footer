@@ -1,5 +1,64 @@
 <link rel="import" href="components/polymer/polymer.html">
+<!--
+`x-footer` encapsulates the page footer into a web component.
 
+    <x-footer></x-footer>
+
+`x-footer` has a brand, social icons, a signature and an address.
+
+
+Brand:
+
+    <h2><a id="brand" href="/x-footer/demo.html">{{brand}}</a></h2>
+
+Social Icons:
+
+    <table id="icons" align="center">
+      <tbody>
+        <td> <a href="http://facebook.com/{{ fbuser }}" target="_blank" > <img id="facebook-icon" src="images/official_facebook.png"> </a> </td>
+        <td> <a href="http://twitter.com/{{ twituser }}" target="_blank"> <img id="twitter-icon" src="images/official_twitter.png"> </a> </td>
+        <td> <a href="http://plus.google.com/{{ plusnumber }}" target="_blank"> <img id="google-icon" src="images/official_google.png"> </a> </td>
+      </tbody>
+    </table>
+
+Singature:
+
+    <p id="dev"> Developed by <a id="brand" href="">{{developer}}</a></p>
+        
+Address:
+
+    <h3> {{city}} </h3>
+    <p> {{address}}</p>
+
+These values are setted in the `demo.html` file, as described below:
+
+    <script> 
+      var footer = document.getElementById('footer');
+
+      fbuser = '';
+      twituser = '';
+      plusnumber = '';
+      brand = 'X-footer';
+      developer = '#developer';
+      city =  'city';
+      address = 'address';
+
+      footer.fbuser = fbuser;
+      footer.twituser = twituser;
+      footer.plusnumber = plusnumber;
+      footer.brand = brand;
+      footer.developer = developer;
+      footer.city = city;
+      footer.address = address;
+
+      </script>
+
+
+@element x-footer
+@blurb Element providing page footer.
+@status alpha
+@homepage https://x-element.github.io/x-footer
+-->
 <polymer-element name="x-footer">
   <template>
  
